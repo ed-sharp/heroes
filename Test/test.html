@@ -1,28 +1,88 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
+
 	<head>
+		<!-- Meta tag -->
+		<meta charset="utf-8" />
+		
 		<!-- Link tag for CSS -->
 		<link type="text/css" rel="stylesheet" href="testpage.css" />
 		
-		<!-- Slide Show jQuery Tag-->
+		<!-- Slide Show jQuery Tag -->
 		<script type="text/javascript" src="jquery/slideShow.js"></script>
+		
+		<!-- Load jQuery Library -->
+		<script type="text/javascript" src="jquery/jquery-1.11.2.min.js"></script>
+		
+		<!-- Sticky Anything jQuery Tag -->
+		<script type="text/javascript" src="jquery/jq-sticky-anything.min.js"></script>
+		
+		<!-- TimeTrade jQuery Tag -->
+		<script type="text/javascript" src="http://cdn.timetrade.com/scripts/lightbox/latest/lightbox.js" ></script>
 
 		<!-- Web Page Title -->
 		<title>Heroes For Students Landing Page</title>
+		
 	</head>
 
-	<body>
-		<div id="header" role="banner">
-			<div id="loginarea">
-				<div id="logobanner">
-					<div id="navigation" role="navigation">
-						
-					</div>
-				</div>
+	<body>	
+		<div id="banner">
+			<div id="header">
+				<a href="https://docs.google.com/forms/d/16wNY1nucA8LtDWsh47Hyw1D_C_qRm3X8ep8vY7Xl3I4/viewform" onclick="window.open(this.href);return false;">Heroes Register</a><a href="https://docs.google.com/forms/d/1f0jYjr9KVJoqA9sQj2H8Z9-9AcBOxreDoBAdcQMoLig/viewform" onclick="window.open(this.href);return false;">Teachers Register</a><a href="http://heroesforstudents.org" onclick="window.open(this.href);return false;">Login</a>
 			</div>
+		
+			<img src="images/heroes_for_students.jpg" alt="Heroes" />
+			
 		</div>
 
+		<nav>
+			<ul>
+				<li><a href="WhatWeDo/whatwedo.html">Home</a></li>
+				<li><a href="WhatWeDo/whatwedo.html">What We Do</a></li>
+				<li><a href="WhoWeAre/whoweare.html">Who We Are</a></li>
+				<li><a href="WhatWeDo/whatwedo.html">Get Involved</a></li>
+			</ul>
+				<span class="donate">
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="SEBZMFJN5LXNJ">
+					<input type="submit" value="Donate">
+				</span>
+		</nav>
+		
+		<div id="main">	
+			<div id="slideShowImages" class="wrapper">
+				<img src="images/classroom001.jpg" alt="Slide 1" class="image" />
+				<img src="images/classroom002.jpg" alt="Slide 2" class="image"/>
+				<img src="images/classroom003.jpg" alt="Slide 3" class="image"/>    
+			</div>
+			
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
 
+		</div>
+		
+		<div id="footer">
+			<p>
+				&copy;2015, Heroes For Students LLC
+			</p>
+		</div>
+		
+		<!-- Custom jQuery Calls -->
+		<script>
+			$("nav").stickThis();
+		</script>
+	
 	</body>
+
 </html>
