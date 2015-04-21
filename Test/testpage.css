@@ -1,11 +1,11 @@
-html {
+ html {
 	background-color: whitesmoke;
 	font-size: 16px;
 }
 
 body {
     width: auto%;
-    margin: 0 10% 0 10%;
+    margin: 0% 10% 0% 10%;
 	color: gray;
 	font-family: wol_reg, segoe ui, helvetica neuve, sans-serif;
 	background-color: white;
@@ -13,13 +13,12 @@ body {
 }
 
 #header {
-	width: 100%;
 	height: 35px;
 	line-height: 35px;
 	text-align: right;
-	background-color: #124b8d;
+	background-color: white;
+	float: right;
 }
-
 
 
 #banner {
@@ -36,8 +35,12 @@ body {
 	float: left;
 }
 
-#banner a:link{
-	background-color: mediumspringgreen;
+.time {
+	float: right;
+}
+
+.time a:link, a:visited{
+	background-color: #008A32;
 	text-align: center;
 	text-decoration: none;
 	color: white;
@@ -45,14 +48,42 @@ body {
 	margin: 0px;
 }
 
-#banner a:hover {
+.time a:hover {
 	background-color: white;
-	border: 1px solid mediumspringgreen;
-	color: mediumspringgreen;
+	border: 1px solid #008A32;
+	color: #008A32;
+}
+
+.donate {
+	margin: 0;
+	float: right;
+}
+
+input[type=submit]{
+	font-family: wol_reg, segoe ui, helvetica neuve, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	background-color: #008A32;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	padding: 22px;
+	margin: 0px;
+}
+
+input[type=submit]:hover {
+	background-color: white;
+	color: #008A32;
+	cursor: pointer;
+}
+
+input[type=submit]:focus {
+	outline: 0;
 }
 
 nav {
-	background-color: lightskyblue;
+	background-color: #124b8d;
 	margin: 0px;
 	padding: 0px;
 	line-height: 65px;
@@ -100,24 +131,25 @@ nav a:link, a:visited {
 
 ul li a:hover {
  background-color: white;
- color: lightskyblue;
+ color: #124b8d;
 }
 
 #header a:link, a:visited {
 	text-align: center;
 	text-decoration: none;
-	color: white;
+	color: #124b8d;
 	padding: 7px 22px 7px 22px;
 	margin: 0px;
 }
 
 #header a:hover {
-	color: #124b8d;
-	background-color: white;
+	color: white;
+	background-color: #124b8d;
 }
 
 #main {
 	width: 100%;
+	margin: 0;
 	text-align: center;
 	font-weight: 400;
 }
