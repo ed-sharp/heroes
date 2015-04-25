@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 	<head>
+		<!-- Meta tag -->
+		<meta charset="utf-8" />
+		
 		<!-- Link tag for CSS -->
-		<link type="text/css" rel="stylesheet" href="stylesheets/homepage.css" />
+		<link type="text/css" rel="stylesheet" href="testpage.css" />
 		
 		<!-- Slide Show jQuery Tag -->
 		<script type="text/javascript" src="jquery/slideShow.js"></script>
@@ -15,80 +18,89 @@
 		<!-- Sticky Anything jQuery Tag -->
 		<script type="text/javascript" src="jquery/jq-sticky-anything.min.js"></script>
 		
+		<!--TimeTrade-->
+		<script type="text/javascript" src="http://cdn.timetrade.com/scripts/lightbox/latest/lightbox.js" ></script>
+
 		<!-- Web Page Title -->
 		<title>Heroes For Students Landing Page</title>
 		
 	</head>
 
-	<body>
- 
-		<div id="header">
-			<span class="head"><a href="http://google.com" onclick="window.open(this.href):return false;">Register</a><a href="http://yahoo.com" onclick="window.open(this.href):return false;">Login</a></span>
-		</div>
-			
+	<body>	
 		<div id="banner">
-			<span class="left"><img src="images/heroes_for_students.jpg" alt="Heroes" /></span>
-			<span class="right"><a href="http://runescape.com" onclick="window.open(this.href):return false;">Dontate</a></span>
+			<div id="header">
+				<a href="https://www.timetrade.com/book/M1XDL?sh=1" width="500" height="800" frameborder="0" onclick="return tt.launchWorkflow(this)" target="_blank">Schedule an Appointment</a><a href="https://docs.google.com/forms/d/16wNY1nucA8LtDWsh47Hyw1D_C_qRm3X8ep8vY7Xl3I4/viewform" onclick="window.open(this.href);return false;">Heroes Register</a><a href="https://docs.google.com/forms/d/1f0jYjr9KVJoqA9sQj2H8Z9-9AcBOxreDoBAdcQMoLig/viewform" onclick="window.open(this.href);return false;">Teachers Register</a>
+			</div>
+			<img src="images/heroes_for_students.jpg" alt="Heroes" />		
 		</div>
-
+		
 		<nav>
 			<ul>
-				<li><a href="http://asu.edu" onclick="window.open(this.href):return false;">Home</a></td>
-				<li><a href="http://beatport.com" onclick="window.open(this.href):return false;">What We Do</a></td>
-				<li><a href="https://youtube.com" onclick="window.open(this.href):return false;">Who We Are</a></td>
-				<li><a href="http://apple.com" onclick="window.open(this.href):return false;">Get Involved</a></td>
-				<li><a href="http://windows.microsoft.com" onclick="window.open(this.href):return false;">Search</a></td>
-			</ul>			
-			<span class="time"><a href="https://www.timetrade.com/book/M1XDL?sh=1" onclick="return tt.launchWorkflow(this)" 
-					target="_blank"><img src="images/TimeTradeLogo.png" 
-					alt="Click to Schedule an Appointment"/></a></span>
+				<li><a href="WhatWeDo/whatwedo.html">Home</a></li>
+				<li><a href="WhatWeDo/whatwedo.html">What We Do</a></li>
+				<li><a href="WhoWeAre/whoweare.html">Who We Are</a></li>
+				<li><a href="WhatWeDo/whatwedo.html">Get Involved</a></li>
+			</ul>
+				<span class="donate"> <!-- keep span name but change paypal link to new donate link -->
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="SEBZMFJN5LXNJ">
+					<input type="submit" value="Donate">
+				</span>
 		</nav>
 		
+		<!-- everything above this comment is the upgraded menu/navigation bar, it should be replaced on every page -->
+		
 		<div id="main">	
-			<div id="slideShowImages" class="wrapper">
-				<img src="images/classroom001.jpg" alt="Slide 1" class="image" />
-				<img src="images/classroom002.jpg" alt="Slide 2" class="image"/>
-				<img src="images/classroom003.jpg" alt="Slide 3" class="image"/>    
+			<div id="whoweare">
+				<br />
+				<span class="heading1">Meet the Co-Founders</span>
+				<table>
+					<tr>
+						<td><img src="images/richie.jpg" /></td>
+						<td>
+							<span class="heading2">Richie Ressel</span>
+							<p class="heading3">Masters Degree - Elementary Education | Mary Lou Fulton Teachers College</p>
+							He has taught English as a second language for three years in a low-income school and is a Teach For America alumnus. guest speakers played a crucial role in his educational development. As a result, he also became a first generation college graduate. Despite the challenge of finding guest speakers, Richie persevered to bring guests from diverse backgrounds and careers to invest his students in their short- and long-term goals. He saw the positive effects these experiences had on motivating students, which led to greater academic achievement. This experience impassioned him to create a system that would facilitate connections between students and guest speakers in the classroom.
+						</td>
+					</tr>
+					<tr>
+						<td><img src="images/chris.jpg" /></td>
+						<td>
+							<span class="heading2">Chris Reina</span>
+							<p class="heading3">Ph.D. Candidate - Management | W.P. Carey School of Business</p>
+							This venture personally moves Chris because he has seen the importance of guest speakers in his own formative educational experience, which led him to be the first in his family to graduate from college. Chris has a passion for teaching and empowering learners in the classroom and has previously worked as a consultant creating English language training curricula with the mission of providing leadership opportunities to employees. These experiences opened his eyes to the link between educational opportunities and professional advancement in a concrete way as he saw employees attain levels of success they never previously thought possible. As a Ph.D. student, Chris has studied the positive effects that volunteerism has on employees in the workplace and seen the transformative change that education can have. Chris will use his management knowledge and relationships to develop and grow HEROES.
+						</td>
+					</tr>
+				</table>
+				<br />
+				<span class="heading1">Board of Advisors</span>
+				<table class="advisors">
+					<tr>
+						<td id="container"><img id="image" src="images/kendrick.jpg" /><p id="text">Kendrick Bates</p></td>
+						<td id="container"><img id="image" src="images/ryen.jpg" /><p id="text">Ryen Borden</p></td>
+						<td id="container"><img id="image" src="images/katee.jpg" /><p id="text">Katee Van Horn</p></td>
+						<td id="container"><img id="image" src="images/kristen.jpg" /><p id="text">Kristen DelGuzzi</p></td>
+					</tr>
+					<tr>
+						<td id="container"><img id="image" src="images/nikki.jpg" /><p id="text">Nikki Gusz</p></td>
+						<td id="container"><img id="image" src="images/martin.jpg" /><p id="text">Martin Perez</p></td>
+						<td id="container"><img id="image" src="images/mark.jpg" /><p id="text">Mark Garcia</p></td>
+						<td id="container"><img id="image" src="images/kristie.jpg" /><p id="text">Kristie Leshinskie</p></td>
+					</tr>
+				</table>
 			</div>
-
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>
-			<p>lolololol</p>		
 		</div>
 		
 		<div id="footer">
 			<p>
-				&copy;2015, Edward Sharp
+				&copy;2015, Heroes For Students LLC
 			</p>
 		</div>
 		
 		<!-- Custom jQuery Calls -->
 		<script>
 			$("nav").stickThis();
-			$(window).resize(function(){location.reload();});
 		</script>
 	
 	</body>
