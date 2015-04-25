@@ -35,25 +35,6 @@ body {
 	float: left;
 }
 
-.time {
-	float: right;
-}
-
-.time a:link, a:visited{
-	background-color: #008A32;
-	text-align: center;
-	text-decoration: none;
-	color: white;
-	padding: 22px;
-	margin: 0px;
-}
-
-.time a:hover {
-	background-color: white;
-	border: 1px solid #008A32;
-	color: #008A32;
-}
-
 .donate {
 	margin: 0;
 	float: right;
@@ -134,7 +115,7 @@ ul li a:hover {
  color: #124b8d;
 }
 
-#header a:link, a:visited {
+#banner a:link, a:visited {
 	text-align: center;
 	text-decoration: none;
 	color: #124b8d;
@@ -152,6 +133,72 @@ ul li a:hover {
 	margin: 0;
 	text-align: center;
 	font-weight: 400;
+}
+
+#whoweare {
+	width: auto%;
+    margin: 0% 10% 0% 10%;
+	color: gray;
+	text-align: left;
+	font-weight: 400;
+}
+
+#whoweare img {
+	padding: 20px;
+	width: 195px;
+	height: 195px;
+}
+
+.heading1 {
+	font-weight: bold;
+	color: #124b8d;
+	font-size: 175%;
+}
+
+.heading2 {
+	font-weight: bold;
+	color: black;
+	font-size: 125%;
+}
+
+.heading3 {
+	font-weight: bold;
+	color: #1973B9;
+	font-size: 125%;
+}
+
+.advisors {
+	margin: auto;
+	text-align: center;
+}
+
+#container {
+	position: relative;
+	padding: 20px;
+}
+
+#image {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#text {
+	opacity: 0;
+	font-weight: bold;
+	color: white;
+	position: relative;
+	height: 195px;
+	line-height: 195px;
+	width: 195px;
+	top: -2px;
+	left: -2px;
+	display: table-cell;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#text:hover {
+	opacity: 1;
 }
 
 #footer {
